@@ -1,0 +1,14 @@
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\bin\Debug\net6.0\CrwnClothing.DAL.deps.json
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\bin\Debug\net6.0\CrwnClothing.DAL.runtimeconfig.json
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\bin\Debug\net6.0\CrwnClothing.DAL.dll
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\bin\Debug\net6.0\ref\CrwnClothing.DAL.dll
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\bin\Debug\net6.0\CrwnClothing.DAL.pdb
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\obj\Debug\net6.0\CrwnClothing.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\obj\Debug\net6.0\CrwnClothing.DAL.AssemblyInfoInputs.cache
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\obj\Debug\net6.0\CrwnClothing.DAL.AssemblyInfo.cs
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\obj\Debug\net6.0\CrwnClothing.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\obj\Debug\net6.0\CrwnClothing.DAL.dll
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\obj\Debug\net6.0\ref\CrwnClothing.DAL.dll
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\obj\Debug\net6.0\CrwnClothing.DAL.pdb
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\obj\Debug\net6.0\CrwnClothing.DAL.genruntimeconfig.cache
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.DAL\obj\Debug\net6.0\CrwnClothing.DAL.csproj.AssemblyReference.cache

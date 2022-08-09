@@ -1,0 +1,253 @@
+﻿++Solution 'CrwnClothing' ‎(4 of 4 projects)
+i:{00000000-0000-0000-0000-000000000000}:CrwnClothing.sln
+++CrwnClothing.Presentation
+i:{00000000-0000-0000-0000-000000000000}:CrwnClothing.Presentation
+++Connected Services 
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:>584
+++Dependencies
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:>583
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:>446
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:>445
+i:{5a2a4202-cbdb-4085-9855-a9a69904f5e4}:>447
+++Analyzers
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:analyzers
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:analyzers
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:analyzers
+i:{5a2a4202-cbdb-4085-9855-a9a69904f5e4}:analyzers
+++Frameworks
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:frameworks
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:frameworks
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:frameworks
+i:{5a2a4202-cbdb-4085-9855-a9a69904f5e4}:frameworks
+++Packages
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:packages
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:packages
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:packages
+++Microsoft.AspNetCore.Authentication (2.2.0)
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:>635
+++Microsoft.AspNetCore.Authentication.JwtBearer (6.0.7)
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:>638
+++StackExchange.Redis.Extensions.AspNetCore (8.0.5)
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:>642
+++StackExchange.Redis.Extensions.Newtonsoft (8.0.5)
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:>639
+++Swashbuckle.AspNetCore (6.2.3)
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:>634
+++Projects
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:projects
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:projects
+++Properties
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\properties\
+++Attributes
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\attributes\
+++Controllers
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\controllers\
+++AuthController.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\controllers\authcontroller.cs
+++CategoryController.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\controllers\categorycontroller.cs
+++ErrorController.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\controllers\errorcontroller.cs
+++ProductController.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\controllers\productcontroller.cs
+++UserController.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\controllers\usercontroller.cs
+++Hubs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\hubs\
+++appsettings.json
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\appsettings.json
+++Program.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\program.cs
+i:{5a2a4202-cbdb-4085-9855-a9a69904f5e4}:c:\users\nemus\source\repos\crwnclothing\testing\program.cs
+++No service dependencies discovered
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:>585
+++Microsoft.AspNetCore.Analyzers
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.7\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.7\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{5a2a4202-cbdb-4085-9855-a9a69904f5e4}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{5a2a4202-cbdb-4085-9855-a9a69904f5e4}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.7\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.7\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.7\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.7\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\sdk\6.0.107\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++System.Text.Json.SourceGeneration
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.7\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.7\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.7\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{5a2a4202-cbdb-4085-9855-a9a69904f5e4}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.7\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.AspNetCore.App
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\microsoft.netcore.app
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\microsoft.netcore.app
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\microsoft.netcore.app
+i:{5a2a4202-cbdb-4085-9855-a9a69904f5e4}:c:\users\nemus\source\repos\crwnclothing\testing\microsoft.netcore.app
+++CrwnClothing.BLL
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\bin\debug\net6.0\crwnclothing.bll.dll
+i:{00000000-0000-0000-0000-000000000000}:CrwnClothing.BLL
+++launchSettings.json
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\properties\launchsettings.json
+++JwtAuthenticationManager.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\attributes\jwtauthenticationmanager.cs
+++AuthHub.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\hubs\authhub.cs
+++ChatHub.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\hubs\chathub.cs
+++UserConnection.cs
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\hubs\userconnection.cs
+++appsettings.Development.json
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\appsettings.development.json
+++CrwnClothing.DAL
+i:{00000000-0000-0000-0000-000000000000}:CrwnClothing.DAL
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\bin\debug\net6.0\crwnclothing.dal.dll
+++Context
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\context\
+++Entities
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\entities\
+++Redis
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\redis\
+++DistributedCacheExtension.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\redis\distributedcacheextension.cs
+++Repositories
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\
+++Scaffold
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\scaffold
+++CrwnClothingContext.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\context\crwnclothingcontext.cs
+++Category.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\entities\category.cs
+++Product.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\entities\product.cs
+++User.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\entities\user.cs
+++CategoryRepository
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\categoryrepository\
+++ProductRepository
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\productrepository\
+++UserRepository
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\userrepository\
+++Microsoft.EntityFrameworkCore (6.0.7)
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:>614
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.7)
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:>615
+++Microsoft.EntityFrameworkCore.Tools (6.0.7)
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:>616
+++CategoryRepository.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\categoryrepository\categoryrepository.cs
+++ICategoryRepository.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\categoryrepository\icategoryrepository.cs
+++IProductRepository.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\productrepository\iproductrepository.cs
+++ProductRepository.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\productrepository\productrepository.cs
+++IUserRepository.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\userrepository\iuserrepository.cs
+++UserRepository.cs
+i:{671e38b1-36d9-40a3-8fd6-4971785f3587}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.dal\repositories\userrepository\userrepository.cs
+++MailKit (3.3.0)
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:>656
+++Microsoft.Extensions.Http (6.0.0)
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:>602
+++Newtonsoft.Json (13.0.1)
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:>601
+++DTOs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\dtos\
+++Exceptions
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\exceptions\
+++External
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\external\
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\external\
+++Helpers
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\helpers\
+++RandomGenterator.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\helpers\randomgenterator.cs
+++Mappers
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\mappers\
+++Services
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\
+++FacebookAuthService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\external\facebookauthservice.cs
+++GoogleAuthService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\external\googleauthservice.cs
+++IFacebookAuthService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\external\ifacebookauthservice.cs
+++IGoogleAuthService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\external\igoogleauthservice.cs
+++CategoryService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\categoryservice.cs
+++EmailService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\emailservice.cs
+++ICategoryService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\icategoryservice.cs
+++IProductService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\iproductservice.cs
+++IUserService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\iuserservice.cs
+++ProductService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\productservice.cs
+++UserService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\userservice.cs
+++AuthUserDTO.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\dtos\authuserdto.cs
+++CategoryDTO.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\dtos\categorydto.cs
+++ExternalAuthDTO.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\dtos\externalauthdto.cs
+++ProductDTO.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\dtos\productdto.cs
+++UserDTO.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\dtos\userdto.cs
+++BusinessException.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\exceptions\businessexception.cs
+++Contracts
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\external\contracts\
+++CategoryMapper.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\mappers\categorymapper.cs
+++ProductMapper.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\mappers\productmapper.cs
+++UserMapper.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\mappers\usermapper.cs
+++FacebokUserInfo.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\external\contracts\facebokuserinfo.cs
+++FacebookTokenValidationResult.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\external\contracts\facebooktokenvalidationresult.cs
+++GoogleTokenValidationResult.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\external\contracts\googletokenvalidationresult.cs
+++GoogleUserInfo.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\external\contracts\googleuserinfo.cs
+++Testing
+i:{00000000-0000-0000-0000-000000000000}:Testing
+++NewFolder
+++Settings
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\settings\
+++MailSettings.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\settings\mailsettings.cs
+++IEmailService.cs
+i:{68c9c6e7-31c3-4024-94b7-704d6a23e359}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.bll\services\iemailservice.cs
+++Templates
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\templates\
+++EmailConfirmation.html
+i:{0be0cca5-fdff-4e9b-a003-65abf270eac1}:c:\users\nemus\source\repos\crwnclothing\crwnclothing.presentation\templates\emailconfirmation.html

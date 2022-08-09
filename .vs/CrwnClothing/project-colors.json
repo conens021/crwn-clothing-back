@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0be0cca5-fdff-4e9b-a003-65abf270eac1": {
+      "ProjectGuid": "0be0cca5-fdff-4e9b-a003-65abf270eac1",
+      "DisplayName": "CrwnClothing.Presentation",
+      "ColorIndex": 0
+    },
+    "671e38b1-36d9-40a3-8fd6-4971785f3587": {
+      "ProjectGuid": "671e38b1-36d9-40a3-8fd6-4971785f3587",
+      "DisplayName": "CrwnClothing.DAL",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "68c9c6e7-31c3-4024-94b7-704d6a23e359": {
+      "ProjectGuid": "68c9c6e7-31c3-4024-94b7-704d6a23e359",
+      "DisplayName": "CrwnClothing.BLL",
+      "ColorIndex": 2
+    },
+    "5a2a4202-cbdb-4085-9855-a9a69904f5e4": {
+      "ProjectGuid": "5a2a4202-cbdb-4085-9855-a9a69904f5e4",
+      "DisplayName": "Testing",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
