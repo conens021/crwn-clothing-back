@@ -7,7 +7,6 @@ namespace CrwnClothing.Presentation.Controllers
     [ApiExplorerSettings(IgnoreApi = true)]
     public class ErrorController : ControllerBase
     {
-
         [Route("/error-dev")]
         public ActionResult GetDevError([FromServices] IWebHostEnvironment webHostEnvironment)
         {
@@ -19,7 +18,8 @@ namespace CrwnClothing.Presentation.Controllers
 
             var context = HttpContext.Features.Get<IExceptionHandlerFeature>();
 
-            Exception error = context?.Error;
+            Exception? error = context?.Error;
+
 
             if (error is BusinessException)
             {
@@ -32,8 +32,8 @@ namespace CrwnClothing.Presentation.Controllers
             }
 
             return Problem(
-                detail: context.Error.StackTrace,
-                title: context.Error.Message);
+                detail: error?.InnerException?.Message ?? "",
+                title: context?.Error.Message ?? "Unknow error");
         }
     }
 }

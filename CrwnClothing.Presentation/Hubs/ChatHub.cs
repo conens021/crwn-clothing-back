@@ -14,7 +14,6 @@ namespace CrwnClothing.Presentation.Hubs
             this._connections = connections;
         }
 
-
         public override async Task<Task> OnDisconnectedAsync(Exception? exception)
         {
 
@@ -42,13 +41,11 @@ namespace CrwnClothing.Presentation.Hubs
             }
         }
 
-
         //join room method
         //this method is called when ever user whant to join the room
         //user need to send username and room he want to join
         public async Task JoinRoom(UserConnection userConnection)
         {
-
             await Groups.AddToGroupAsync(Context.ConnectionId, userConnection.Room);
 
             _connections.Add(Context.ConnectionId, userConnection);

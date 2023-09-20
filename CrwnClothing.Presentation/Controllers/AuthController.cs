@@ -5,6 +5,7 @@ using CrwnClothing.BLL.Services;
 using static CrwnClothing.BLL.External.Contracts.FacebokUserInfo;
 using Microsoft.AspNetCore.SignalR;
 using CrwnClothing.Presentation.Hubs;
+using CrwnClothing.BLL.DTOs.UserDto;
 
 namespace CrwnClothing.Presentation.Controllers
 {
@@ -14,13 +15,13 @@ namespace CrwnClothing.Presentation.Controllers
     {
         private readonly JwtAuthenticationManager _jwt;
         private readonly IUserService _userService;
-        private readonly IHubContext<AuthHub> _hubContext;
 
-        public AuthController(JwtAuthenticationManager jwt, IUserService userService, IHubContext<AuthHub> hubContext)
+        public AuthController(
+            JwtAuthenticationManager jwt, 
+            IUserService userService)
         {
             _jwt = jwt;
             _userService = userService;
-            _hubContext = hubContext;
         }
 
         [HttpPost]
@@ -32,24 +33,12 @@ namespace CrwnClothing.Presentation.Controllers
             return Ok(_jwt.Auth(userDTO));
         }
 
-
-        [HttpPost("google")]
-        public async Task<IActionResult> GoogleLogin(ExternalAuthDTO externalAuth)
+        [HttpPost("social")]
+        public async Task<IActionResult> SocialLogin(ExternalAuthDTO externalAuth)
         {
-            var googleUser = await _jwt.VerifyGoogleToken(externalAuth);
+            var socialUser = await _jwt.VerifyExternalToken(externalAuth);
 
-            UserDTO userDTO = _userService.GetUserByUsername(googleUser.Email);
-
-
-            return Ok(_jwt.Auth(userDTO));
-        }
-
-        [HttpPost("facebook")]
-        public async Task<IActionResult> FacebookLogin(ExternalAuthDTO externalAuth)
-        {
-            var facebookUser = await _jwt.VerifyFacebookToken(externalAuth);
-
-            UserDTO userDTO = _userService.GetUserByUsername(facebookUser.Email);
+            UserDTO userDTO = _userService.GetUserByUsername(socialUser.Email);
 
 
             return Ok(_jwt.Auth(userDTO));

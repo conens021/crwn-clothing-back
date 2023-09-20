@@ -2,21 +2,16 @@
 
 namespace CrwnClothing.BLL.External.Contracts
 {
-    public class FacebokUserInfo
+    public class FacebokUserInfo : BaseUserInfo
     {
-
-        [JsonProperty("id")]
-        public string Id { get; set; } = string.Empty;
-
-        [JsonProperty("name")]
-        public string Name { get; set; } = string.Empty;
-
-        [JsonProperty("email")]
-        public string Email { get; set; } = string.Empty;
-
         [JsonProperty("picture")]
         public FacebookPicture Picture { get; set; } = null!;
 
+        [JsonProperty("first_name")]
+        public string FirstName { get; set; } = String.Empty;
+
+        [JsonProperty("last_name")]
+        public string LastName { get; set; } = String.Empty;
 
         public class FacebookPicture
         {

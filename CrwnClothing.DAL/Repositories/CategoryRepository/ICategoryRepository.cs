@@ -1,18 +1,12 @@
 ﻿using CrwnClothing.DAL.Entities;
+using CrwnClothing.DAL.Models;
+using CrwnClothing.DAL.Models.Sorting;
 
 namespace CrwnClothing.DAL.Repositories.CategoryRepository
 {
-    public interface ICategoryRepository
+    public interface ICategoryRepository : IRepository<Category>
     {
-        public Category? GetCategory(int id);
         public Category? GetCategoryByName(string name);
-        public Category CreateCategory(Category user);
-        public Category UpdateCategory(Category user);
-        public Category DeleteCategory(Category user);
-        public IEnumerable<Category> GetAll();
-        public Category? GetWithProducts(int id);
-        public Category? GetWithProducts(string categoryName);
-        public IEnumerable<Category> GetAllWithProducts();
-
+        public IEnumerable<Category> GetAllWithProducts(Pagination productsPagination,SortingModel sorting);
     }
 }

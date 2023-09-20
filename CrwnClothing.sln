@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrwnClothing.DAL", "CrwnClo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CrwnClothing.BLL", "CrwnClothing.BLL\CrwnClothing.BLL.csproj", "{68C9C6E7-31C3-4024-94B7-704D6A23E359}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testing", "Testing\Testing.csproj", "{0D95D016-DE0F-4182-AD32-72187CDD1879}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{68C9C6E7-31C3-4024-94B7-704D6A23E359}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{68C9C6E7-31C3-4024-94B7-704D6A23E359}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{68C9C6E7-31C3-4024-94B7-704D6A23E359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D95D016-DE0F-4182-AD32-72187CDD1879}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D95D016-DE0F-4182-AD32-72187CDD1879}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D95D016-DE0F-4182-AD32-72187CDD1879}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D95D016-DE0F-4182-AD32-72187CDD1879}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

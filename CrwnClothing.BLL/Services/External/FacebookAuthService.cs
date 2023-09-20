@@ -9,7 +9,8 @@ namespace CrwnClothing.BLL.Services.External
         private readonly IHttpClientFactory _httpClient;
 
         private const string FACEBOOK_TOKEN_VALIDATION_URL = "https://graph.facebook.com/debug_token?input_token={0}&access_token={1}";
-        private const string FACEBOOK_USER_INFO_URL = "https://graph.facebook.com/{0}?access_token={1}&fields=id,name,email,picture";
+        private const string FACEBOOK_USER_INFO_URL =
+            "https://graph.facebook.com/{0}?access_token={1}&fields=id,name,email,picture,first_name,last_name";
 
         
         public FacebookAuthService(IHttpClientFactory httpClient)

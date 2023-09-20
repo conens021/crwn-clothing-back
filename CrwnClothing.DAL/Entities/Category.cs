@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace CrwnClothing.DAL.Entities
+﻿namespace CrwnClothing.DAL.Entities
 {
-    public partial class Category
+    public partial class Category : BaseEntity
     {
         public Category()
         {
             Products = new HashSet<Product>();
         }
 
-        public int Id { get; set; }
         public string Name { get; set; } = null!;
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+        public string? CoverImageUrl { get; set; }
 
         public virtual ICollection<Product> Products { get; set; }
     }

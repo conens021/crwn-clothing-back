@@ -1,14 +1,18 @@
 ﻿
 using CrwnClothing.BLL.DTOs;
+using CrwnClothing.BLL.DTOs.FiltersDTO;
+using CrwnClothing.BLL.DTOs.ProductDto;
+using CrwnClothing.BLL.DTOs.SortingDto;
 
 namespace CrwnClothing.BLL.Services
 {
-    public interface IProductService
+    public interface IProductService : IBaseService<ProductDTO, CreateProductDTO>
     {
-        public ProductDTO GetProduct(int id);
-        public ProductDTO CreateProduct(ProductDTO product);
-        public ProductDTO UpdateProduct(ProductDTO product);
-        public ProductDTO DeleteProduct(ProductDTO product);
-        public List<ProductDTO> GetAll();
+        public List<ProductDTO> GetByIdBulk(List<int> ids);
+        public List<ProductDTO> GetAll(PaginationDTO paginationDTO, ProductFilterDTO productFilterDTO);
+        public List<ProductDTO> GetAll(PaginationDTO paginationDTO, SortingDTO sorting, ProductFilterDTO productFilterDTO);
+        public List<ProductDTO> GetAllByCategory(
+            string categoryName, PaginationDTO paginationDTO, SortingDTO sorting, ProductFilterDTO productFilterDTO);
+        public ProductWithCategoryAndSizesDTO GetClientProduct(int productId);
     }
 }

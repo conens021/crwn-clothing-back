@@ -10,16 +10,24 @@
 
         public string TemplatePath { get; set; }
 
-        private PathRegistry(string contentRootPath, string webRootPath,string templateRootPath)
+        public string ImagesBasePath { get; set; } = string.Empty;
+
+        public string CategoriesPath { get; set; } = string.Empty;
+
+        public string ProductsPath { get; set; } = string.Empty;
+
+        private PathRegistry(string contentRootPath, string webRootPath, string templateRootPath)
         {
             ContentRootPath = contentRootPath;
             WebRootPath = webRootPath;
-            TemplatePath = templateRootPath;    
+            TemplatePath = templateRootPath;
+            ImagesBasePath = Path.Combine(webRootPath, "images");
+            CategoriesPath = "categories";
+            ProductsPath = "products";
         }
-   
 
-        public static PathRegistry GetInstance(string contentRootPath = null, string webRootPath = null,string templateRootPath = null) =>
-            _instance = _instance ?? new PathRegistry(contentRootPath, webRootPath,templateRootPath);
-       
+        public static PathRegistry GetInstance(
+            string contentRootPath = null, string webRootPath = null, string templateRootPath = null) =>
+            _instance = _instance ?? new PathRegistry(contentRootPath, webRootPath, templateRootPath);
     }
 }

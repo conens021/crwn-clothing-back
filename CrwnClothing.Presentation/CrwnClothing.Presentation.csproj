@@ -19,4 +19,8 @@
     <ProjectReference Include="..\CrwnClothing.BLL\CrwnClothing.BLL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
 </Project>

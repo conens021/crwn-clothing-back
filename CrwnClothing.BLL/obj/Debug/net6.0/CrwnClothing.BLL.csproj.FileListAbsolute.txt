@@ -1,6 +1,5 @@
 C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\bin\Debug\net6.0\CrwnClothing.BLL.deps.json
 C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\bin\Debug\net6.0\CrwnClothing.BLL.dll
-C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\bin\Debug\net6.0\ref\CrwnClothing.BLL.dll
 C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\bin\Debug\net6.0\CrwnClothing.BLL.pdb
 C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\bin\Debug\net6.0\CrwnClothing.DAL.dll
 C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\bin\Debug\net6.0\CrwnClothing.DAL.pdb
@@ -13,3 +12,4 @@ C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\obj\Debug\net6.0\CrwnC
 C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\obj\Debug\net6.0\CrwnClothing.BLL.dll
 C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\obj\Debug\net6.0\ref\CrwnClothing.BLL.dll
 C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\obj\Debug\net6.0\CrwnClothing.BLL.pdb
+C:\Users\Nemus\source\repos\CrwnClothing\CrwnClothing.BLL\obj\Debug\net6.0\refint\CrwnClothing.BLL.dll

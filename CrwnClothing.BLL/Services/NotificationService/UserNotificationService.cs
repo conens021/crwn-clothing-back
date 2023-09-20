@@ -1,4 +1,5 @@
 ﻿using CrwnClothing.BLL.DTOs;
+using CrwnClothing.BLL.DTOs.UserDto;
 using CrwnClothing.BLL.Helpers;
 using CrwnClothing.BLL.Models;
 using CrwnClothing.BLL.Services.TemplateService;

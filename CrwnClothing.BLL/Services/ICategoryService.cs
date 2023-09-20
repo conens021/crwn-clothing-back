@@ -1,18 +1,14 @@
 ﻿
 using CrwnClothing.BLL.DTOs;
+using CrwnClothing.BLL.DTOs.CategoryDto;
+using CrwnClothing.BLL.DTOs.SortingDto;
 
 namespace CrwnClothing.BLL.Services
 {
-    public interface ICategoryService
+    public interface ICategoryService : IBaseService<CategoryDTO,CreateCategoryDTO>
     {
-        public CategoryDTO GetCategory(int id);
-        public CategoryDTO GetCategoryWithProducts(int id);
         public CategoryDTO GetCategoryByName(string name);
-        public CategoryDTO GetCategoryWithProducts(string name);
-        public CategoryDTO CreateCategory(CategoryDTO user);
-        public CategoryDTO UpdateCategory(CategoryDTO user);
-        public CategoryDTO DeleteCategory(CategoryDTO user);
-        public List<CategoryDTO> GetAll();
-        public List<CategoryDTO> GetAllWithProducts();
+        public List<CategoryDTO> GetAllWithProducts(PaginationDTO paginationDTO,SortingDTO sortingDto);
+        public Task<CategoryDTO> UpdateCategoryImage(int id, string image);
     }
 }

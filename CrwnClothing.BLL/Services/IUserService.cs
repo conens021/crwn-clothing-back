@@ -1,18 +1,15 @@
-﻿using CrwnClothing.BLL.DTOs;
+﻿using CrwnClothing.BLL.DTOs.UserDto;
+using CrwnClothing.BLL.DTOs;
 
 namespace CrwnClothing.BLL.Services
 {
-    public interface IUserService
+    public interface IUserService : IBaseService<UserDTO, CreateUserDTO>
     {
-        public List<UserDTO> GetAll();
-        public UserDTO GetUser(int id);
-        public UserDTO GetSafeUser(int id);
         public UserDTO GetUserByUsername(string username);
         public UserDTO AuthUser(AuthUserDTO authUserDTO);
-        public UserDTO CreateUser(UserDTO user);
-        public UserDTO UpdateUser(UserDTO user);
-        public UserDTO DeleteUser(UserDTO user);
-        public Task<bool> VerifyEmail(UserDTO user, EmailVerificationCode code);
+        public Task<UserDTO> VerifyEmail(UserDTO user, EmailVerificationCode code);
         public Task<string> SendEmailVerificationCode(UserDTO user);
+        public Task<string> SendEmailVerificationCode(string email);
+        Task<UserDTO> Create(ExternalUserInfoDTO externalUserInfoDTO);
     }
 }

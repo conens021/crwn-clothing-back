@@ -1,6 +1,9 @@
 ﻿using CrwnClothing.BLL.DTOs;
-using CrwnClothing.BLL.External.Contracts;
+using CrwnClothing.BLL.DTOs.UserDto;
+using CrwnClothing.BLL.Mappers;
 using CrwnClothing.BLL.Services.External;
+using CrwnClothing.Presentation.Helpers;
+using DroneDropshipping.BLL.Exceptions;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -11,21 +14,20 @@ namespace CrwnClothing.Presentation.Attributes
     public class JwtAuthenticationManager
     {
         private readonly IConfiguration _configuration;
-        private readonly IHttpContextAccessor _contextAccesor;
+        private readonly HeaderParser _headerParser;
         private readonly IFacebookAuthService _facebookAuthService;
         private readonly IGoogleAuthService _googleAuthService;
-
 
         public JwtAuthenticationManager
             (
                 IConfiguration configuration,
-                IHttpContextAccessor contextAccesor,
+                HeaderParser headerParser,
                 IFacebookAuthService facebookAuthService,
                 IGoogleAuthService googleAuthService
             )
         {
             _configuration = configuration;
-            _contextAccesor = contextAccesor;
+            _headerParser = headerParser;
             _facebookAuthService = facebookAuthService;
             _googleAuthService = googleAuthService;
         }
@@ -59,49 +61,67 @@ namespace CrwnClothing.Presentation.Attributes
             return tokenHandler.WriteToken(token);
         }
 
-        public async Task<GoogleUserInfo> VerifyGoogleToken(ExternalAuthDTO externalAuth)
+        private async Task<ExternalUserInfoDTO> VerifyGoogleToken(string token)
         {
             var tokenInfo = await
-                _googleAuthService.ValidateAccessTokenAsync(externalAuth.IdToken);
+                _googleAuthService.ValidateAccessTokenAsync(token);
 
             if (tokenInfo == null) throw new Exception("User not found, or invalid access token!");
 
-            var userInfo = await _googleAuthService.GetUserInfo(externalAuth.IdToken);
+            var userInfo = await _googleAuthService.GetUserInfo(token);
 
             if (userInfo == null) throw new Exception("Wrong user id!");
 
 
-            return userInfo;
+            return userInfo.ToDTO();
         }
 
-        public async Task<FacebokUserInfo> VerifyFacebookToken(ExternalAuthDTO externalAuth)
+        private async Task<ExternalUserInfoDTO> VerifyFacebookToken(string token)
         {
             string facebokAccessToken = _configuration["ExternalKey:Facebook"];
 
 
             var tokenInfo = await
-                _facebookAuthService.ValidateAccessTokenAsync(externalAuth.IdToken, facebokAccessToken);
+                _facebookAuthService.ValidateAccessTokenAsync(token, facebokAccessToken);
 
-            if (tokenInfo == null) throw new Exception("User not found, or invalid access token!");
+            if (tokenInfo == null) throw new Exception("Expired or invalid user token!");
 
 
             string userId = tokenInfo.Data.UserId;
 
-            var userInfo = await _facebookAuthService.GetUserInfo(userId, externalAuth.IdToken);
+            var userInfo = await _facebookAuthService.GetUserInfo(userId, token);
 
 
-            if (userInfo == null) throw new Exception("Wrong user id!");
+            if (userInfo == null) throw new Exception("Invalid extarnal user id!");
 
-            return userInfo;
+            return userInfo.ToDTO();
         }
 
+        public async Task<ExternalUserInfoDTO> VerifyExternalToken(ExternalAuthDTO externalAuthDTO)
+        {
+            switch (externalAuthDTO.Provider)
+            {
+                case "FACEBOOK":
+                    return await VerifyFacebookToken(externalAuthDTO.IdToken);
+
+                case "GOOGLE":
+                    return await VerifyGoogleToken(externalAuthDTO.IdToken);
+
+                default:
+                    throw new BusinessException("Invalid Oauth2 provider", 404);
+            }
+
+        }
 
         public UserDTO GetBearerUser()
         {
 
             var key = Encoding.ASCII.GetBytes(_configuration["AppSettings:JWTEncryptionKey"]);
 
-            var token = GetToken();
+            string? token = GetToken();
+
+            if (token == null)
+                throw new BusinessException("Authorization token not provided!", 401);
 
             var handler = new JwtSecurityTokenHandler();
 
@@ -123,9 +143,9 @@ namespace CrwnClothing.Presentation.Attributes
         }
 
 
-        private string GetToken()
+        private string? GetToken()
         {
-            var jwtTokenValue = _contextAccesor?.HttpContext?.Request.Headers.Authorization.ToString().Replace("Bearer ", "");
+            string? jwtTokenValue = _headerParser.Get("Authorization")?.Replace("Bearer ", "");
 
 
             return jwtTokenValue;
@@ -146,7 +166,7 @@ namespace CrwnClothing.Presentation.Attributes
             userAuthorize.Id = id == null ? 0 : Int32.Parse(id);
             userAuthorize.Email = email == null ? "" : email;
             userAuthorize.Username = username ?? "";
-            userAuthorize.Verified = Convert.ToBoolean(verified);
+            userAuthorize.Verified = verified != null && verified != String.Empty && Convert.ToBoolean(verified);
 
 
             return userAuthorize;

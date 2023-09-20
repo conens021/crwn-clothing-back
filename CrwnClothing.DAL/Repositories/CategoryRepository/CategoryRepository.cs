@@ -1,37 +1,21 @@
 ﻿using CrwnClothing.DAL.Context;
 using CrwnClothing.DAL.Entities;
+using CrwnClothing.DAL.Models;
+using CrwnClothing.DAL.Models.Sorting;
 using Microsoft.EntityFrameworkCore;
+using CrwnClothing.DAL.Helpers;
+using Z.EntityFramework.Plus;
 
 namespace CrwnClothing.DAL.Repositories.CategoryRepository
 {
-    public class CategoryRepository : ICategoryRepository
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
 
         private readonly CrwnClothingContext _context;
 
-        public CategoryRepository(CrwnClothingContext context)
+        public CategoryRepository(CrwnClothingContext context) : base(context)
         {
             _context = context;
-        }
-
-        public Category CreateCategory(Category category)
-        {
-            _context.Categories.Add(category);
-
-            _context.SaveChanges();
-
-
-            return category;
-        }
-
-        public Category DeleteCategory(Category category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Category> GetAll()
-        {
-            return _context.Categories;
         }
 
         public Category? GetWithProducts(int categoryId)
@@ -42,19 +26,9 @@ namespace CrwnClothing.DAL.Repositories.CategoryRepository
                 .FirstOrDefault();
         }
 
-        public Category? GetCategory(int id)
-        {
-            return _context.Categories.Where(c => c.Id == id).FirstOrDefault();
-        }
-
         public Category? GetCategoryByName(string name)
         {
             return _context.Categories.Where(c => c.Name == name).FirstOrDefault();
-        }
-
-        public Category UpdateCategory(Category category)
-        {
-            throw new NotImplementedException();
         }
 
         public Category? GetWithProducts(string categoryName)
@@ -65,9 +39,16 @@ namespace CrwnClothing.DAL.Repositories.CategoryRepository
                .FirstOrDefault();
         }
 
-        public IEnumerable<Category> GetAllWithProducts()
+        public IEnumerable<Category> GetAllWithProducts(Pagination pagination, SortingModel sorting)
         {
-            return _context.Categories.Include(c => c.Products);
+
+            return _context.Categories
+                .OrderByPropertyName(sorting.OrderBy, sorting.OrderDirection).
+                Page(pagination)
+                .IncludeFilter(c =>
+                    c.Products.OrderByDescending(p => p.CreatedAt)
+                    .Take(4));
         }
+
     }
 }

@@ -1,5 +1,5 @@
 ﻿
-using CrwnClothing.BLL.DTOs;
+using CrwnClothing.BLL.DTOs.UserDto;
 
 namespace CrwnClothing.BLL.Services.NotificationService
 {

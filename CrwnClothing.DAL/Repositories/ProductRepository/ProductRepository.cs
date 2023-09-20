@@ -1,45 +1,47 @@
 ﻿using CrwnClothing.DAL.Context;
 using CrwnClothing.DAL.Entities;
+using CrwnClothing.DAL.Models;
+using CrwnClothing.DAL.Helpers;
+using CrwnClothing.DAL.Models.Filtering;
+using CrwnClothing.DAL.Helpers.Filtering;
+using CrwnClothing.DAL.Models.Sorting;
+using Microsoft.EntityFrameworkCore;
 
 namespace CrwnClothing.DAL.Repositories.ProductRepository
 {
-    public class ProductRepository : IProductRepository
+    public class ProductRepository : Repository<Product>, IProductRepository
     {
-
         private readonly CrwnClothingContext _context;
 
-        public ProductRepository(CrwnClothingContext crwnClothingContext)
+        public ProductRepository(CrwnClothingContext crwnClothingContext) : base(crwnClothingContext)
         {
             _context = crwnClothingContext;
         }
 
-        public Product CreateProduct(Product product)
+        public IEnumerable<Product> GetAll(Pagination pagination, ProductFilterModel filter)
         {
-            _context.Products.Add(product);
 
-            _context.SaveChanges();
-
-            return product;
+            return _context.Products.
+                FilterProducts(filter)
+                .Page(pagination);
         }
 
-        public Product DeleteProduct(Product product)
+        public IEnumerable<Product> GetAll(Pagination pagination, SortingModel sorting, ProductFilterModel filter)
         {
-            throw new NotImplementedException();
+            return _context.Products
+                .FilterProducts(filter)
+                .OrderByPropertyName(sorting.OrderBy, sorting.OrderDirection)
+                .Page(pagination);
         }
 
-        public Product? Get(int id)
+        public IEnumerable<Product> GetAllByCategory(string categoryName, Pagination pagination, SortingModel sorting, ProductFilterModel filter)
         {
-            return _context.Products.Where(product => product.Id == id).FirstOrDefault();
-        }
-
-        public Product UpdateProduct(Product product)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Product> GetAll()
-        {
-            return _context.Products;
+            return _context.Products
+                .Include(p => p.Category)
+                .Where(p => (p.Category != null && p.Category.Name == categoryName))
+               .FilterProducts(filter)
+               .OrderByPropertyName(sorting.OrderBy, sorting.OrderDirection)
+               .Page(pagination);
         }
     }
 }

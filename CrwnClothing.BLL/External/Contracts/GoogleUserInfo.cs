@@ -2,19 +2,10 @@
 
 namespace CrwnClothing.BLL.External.Contracts
 {
-    public partial class GoogleUserInfo
+    public partial class GoogleUserInfo : BaseUserInfo
     {
-        [JsonProperty("id")]
-        public string Id { get; set; } = String.Empty;
-
-        [JsonProperty("email")]
-        public string Email { get; set; } = String.Empty;
-
         [JsonProperty("verified_email")]
         public bool VerifiedEmail { get; set; }
-
-        [JsonProperty("name")]
-        public string Name { get; set; } = String.Empty;
 
         [JsonProperty("given_name")]
         public string GivenName { get; set; } = String.Empty;
